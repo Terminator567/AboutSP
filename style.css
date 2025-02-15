@@ -1,36 +1,46 @@
-/* Welcome Page Styling */
-body.welcome {
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Arial', sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Welcome style*/
+body.welcome {
     background: url('assets/world-map.png') no-repeat center center fixed;
     background-size: cover;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
-/* Main Introduction Box */
 .welcome-container {
-    background: rgba(243, 238, 238, 0.65); /* Darker overlay for better contrast */
+    background: rgba(0, 0, 0, 0.7); 
     padding: 40px;
-    width: 60%;
+    width: 70%;
     max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(1, 1, 1, 0.3);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
+    color: white;
 }
 
-/* Heading Styling */
 .welcome-container h1 {
     font-size: 2.5em;
     margin-bottom: 15px;
-    letter-spacing: 1px;
 }
 
-/* Introduction Paragraph */
 .intro-text {
     font-size: 1.2em;
     line-height: 1.6;
@@ -38,7 +48,13 @@ body.welcome {
     margin-bottom: 20px;
 }
 
-/* Stylish Begin Button */
+.explanation {
+    font-size: 1.1em;
+    font-style: italic;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
 .begin-button {
     display: inline-block;
     padding: 12px 25px;
@@ -57,29 +73,16 @@ body.welcome {
     transform: scale(1.1);
 }
 
-
-/* 🌍 General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+/*Timeline styling*/
+body.timeline-page {
+    background: linear-gradient(135deg, 
+    #FF9A8B,  
+    #FF6A88,  
+    #FFCC70,  
+    #70E1F5,  
+    #98D8AA); 
 }
 
-/* 🏙 Backgrounds for Country Pages */
-.tokyo { background: url('assets/tokyo.jpg') no-repeat center center; }
-.singapore { background: url('assets/singapore.jpg') no-repeat center center; }
-.sydney { background: url('assets/sydney.jpg') no-repeat center center; }
-.mumbai { background: url('assets/mumbai.jpg') no-repeat center center; }
-
-/* 📌 Title on Timeline Page */
 h1 {
     font-size: 2.5em;
     margin-top: 30px;
@@ -88,7 +91,6 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* 🕒 Timeline Layout (Now Properly Vertical) */
 .timeline {
     display: flex;
     flex-direction: column;
@@ -98,76 +100,117 @@ h1 {
     margin-top: 20px;
 }
 
-/* 📍 Timeline Entries (Click to Open Pages) */
+/*Timeline Entries*/
 .entry {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 15px 0; /* Spacing between boxes */
+    margin: 15px 0;
     text-align: center;
     text-decoration: none;
     color: black;
     display: block;
     width: 80%;
     transition: 0.3s ease-in-out;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-/* 📍 Hover Effect */
 .entry:hover {
     transform: scale(1.05);
     background: #f0f8ff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* 🌎 Unique Border Colors for Each Country */
-.tokyo { border-left: 6px solid #ff5e5e; } /* Red */
-.singapore { border-left: 6px solid #ff9f1c; } /* Orange */
-.sydney { border-left: 6px solid #2ec4b6; } /* Greenish Blue */
-.mumbai { border-left: 6px solid #3d348b; } /* Dark Blue */
+/*Borders*/
+.tokyo { border-left: 6px solid #ff5e5e; } 
+.singapore { border-left: 6px solid #ff9f1c; } 
+.sydney { border-left: 6px solid #2ec4b6; }
+.mumbai { border-left: 6px solid #3d348b; } 
 
-/* 📦 Content Box for Country Pages */
+/*City Pictures*/
+body.tokyo { background: url('assets/Tokyo.png') no-repeat center center; }
+body.singapore { background: url('assets/Singapore.png') no-repeat center center; }
+body.sydney { background: url('assets/Sydney.png') no-repeat center center; }
+body.mumbai { background: url('assets/Mumbai.png') no-repeat center center; }
+
+body.tokyo, body.singapore, body.sydney, body.mumbai {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*Content Box*/
 .content-box {
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
-    padding: 30px;
-    width: 60%;
-    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    width: 75%;
+    max-width: 900px;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
+    color: white;
 }
 
-/* 🏷 Headings & Text */
-h1 {
+/*Headings & Text*/
+.content-box h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
+
 .subtitle {
     font-size: 1.3em;
     opacity: 0.9;
     font-style: italic;
+    margin-bottom: 20px;
 }
+
 ul {
     text-align: left;
     margin-top: 20px;
     line-height: 1.8;
+    font-size: 1.2em;
 }
 
-/* 🔗 Navigation Links */
+/*Navigation Buttons*/
 nav {
     margin-top: 20px;
 }
+
 nav a {
     text-decoration: none;
-    color: #ffcc00;
+    color: black;
     font-size: 1.2em;
     margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #ffcc00;
+    font-weight: bold;
     transition: 0.3s;
+    display: inline-block;
 }
+
 nav a:hover {
-    color: #ffaa00;
-    text-decoration: underline;
+    background: #ffaa00;
+    color: white;
 }
-
-
-
+@media (max-width: 768px) {
+    .welcome-container, .content-box {
+        width: 90%;
+        padding: 20px;
+    }
+    .timeline {
+        width: 90%;
+    }
+    .entry {
+        width: 90%;
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    ul {
+        font-size: 1em;
+    }
+}
