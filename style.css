@@ -58,40 +58,116 @@ body.welcome {
 }
 
 
+/* 🌍 General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 🏙 Backgrounds for Country Pages */
+.tokyo { background: url('assets/tokyo.jpg') no-repeat center center; }
+.singapore { background: url('assets/singapore.jpg') no-repeat center center; }
+.sydney { background: url('assets/sydney.jpg') no-repeat center center; }
+.mumbai { background: url('assets/mumbai.jpg') no-repeat center center; }
+
+/* 📌 Title on Timeline Page */
+h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 🕒 Timeline Layout (Now Properly Vertical) */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 📍 Timeline Entries (Click to Open Pages) */
+.entry {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px 0; /* Spacing between boxes */
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 80%;
+    transition: 0.3s ease-in-out;
+}
+
+/* 📍 Hover Effect */
+.entry:hover {
+    transform: scale(1.05);
+    background: #f0f8ff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌎 Unique Border Colors for Each Country */
+.tokyo { border-left: 6px solid #ff5e5e; } /* Red */
+.singapore { border-left: 6px solid #ff9f1c; } /* Orange */
+.sydney { border-left: 6px solid #2ec4b6; } /* Greenish Blue */
+.mumbai { border-left: 6px solid #3d348b; } /* Dark Blue */
+
+/* 📦 Content Box for Country Pages */
+.content-box {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    padding: 30px;
+    width: 60%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-.timeline {
-    position: relative;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+/* 🏷 Headings & Text */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-size: 1.3em;
+    opacity: 0.9;
+    font-style: italic;
+}
+ul {
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.8;
 }
 
-.entry {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    position: relative;
+/* 🔗 Navigation Links */
+nav {
+    margin-top: 20px;
 }
-
-.entry::before {
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background: #0077b6;
-    left: -10px;
-    top: 0;
-}
-
-.entry:hover {
-    background: #f0f8ff;
-    transform: scale(1.05);
+nav a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 1.2em;
+    margin: 0 10px;
     transition: 0.3s;
 }
+nav a:hover {
+    color: #ffaa00;
+    text-decoration: underline;
+}
+
+
+
