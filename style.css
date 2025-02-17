@@ -91,6 +91,13 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;  
+    margin-bottom: 15px; 
+    color: #ffcc00;
+}
+
 .timeline {
     display: flex;
     flex-direction: column;
@@ -213,4 +220,25 @@ nav a:hover {
     ul {
         font-size: 1em;
     }
+}
+
+.skip-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    background: #ffcc00;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+}
+
+.skip-button:hover {
+    background: #ffaa00;
+    transform: scale(1.1) rotate(2deg);
 }
