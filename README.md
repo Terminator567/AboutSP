@@ -1,8 +1,11 @@
 AboutSP – My Journey Across the World
 Welcome to **AboutSP**, a personal website that showcases my journey, interests, and experiences!  This site is designed as an interactive travel timeline, allowing visitors to explore different aspects of my life.
-Live Website
-**Check it out here:** [https://Terminator567.github.io/AboutSP/](https://Terminator567.github.io/AboutSP/)
-Project Overview
+Live Website  
+
+**Check it out here:** [https://Terminator567.github.io/AboutSP/](https://Terminator567.github.io/AboutSP/)  
+
+Project Overview  
+
 ### **File Structure**
 
 ├── assets/   
