@@ -9,7 +9,7 @@ AboutSP/
 ├── assets/         # All images used in the project
 │   ├── Tokyo.png
 │   ├── Singapore.png
-│   ├── Sydney.png
+│   ├── Sydney.png 
 │   ├── India.png
 ├── index.html      # Main homepage (Welcome Page)
 ├── timeline.html   # Travel timeline with clickable locations
