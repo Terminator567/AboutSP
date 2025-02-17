@@ -5,11 +5,7 @@ Live Website
 Project Overview
 ### **File Structure**
 
-├── assets/  
-│   ├── Tokyo.png
-│   ├── Singapore.png
-│   ├── Sydney.png
-│   ├── India.png  
+├── assets/   
 ├── index.html      
 ├── timeline.html   
 ├── tokyo.html      
