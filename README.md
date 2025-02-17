@@ -22,21 +22,31 @@ Project Overview
 
 
 Features
-**Interactive Timeline** – Click on different locations to read my experiences.
-**TL;DR Button** – For lazy readers, a short summary page is included.
-**Fully Responsive** – Works on mobile and desktop screens.
-**Fun & Personal** – A mix of humor and real experiences!
-How to Run the Project Locally
-If you want to run the website on your local machine:
-**1. Clone this repository:**
-```sh
-git clone https://github.com/Terminator567/AboutSP.git
+**Interactive Timeline** – Click on different locations to read my experiences. 
+
+**TL;DR Button** – For lazy readers, a short summary page is included.  
+
+**Fully Responsive** – Works on mobile and desktop screens.  
+
+**Fun & Personal** – A mix of humor and real experiences!  
+
+How to Run the Project Locally  
+
+If you want to run the website on your local machine:  
+
+**1. Clone this repository:**  
+
+```sh  
+
+git clone https://github.com/Terminator567/AboutSP.git  
 ```
-**2. Open the project folder:**
+**2. Open the project folder:**  
+
 ```sh
 cd AboutSP
 ```
-**3. Open `index.html` in a browser:**
+**3. Open `index.html` in a browser:**  
+
 - Simply **double-click `index.html`** OR
 - Run a local server with Python:
 ```sh
