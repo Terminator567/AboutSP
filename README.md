@@ -52,5 +52,5 @@ Then open `http://localhost:8000` in your browser.
 Contact
 If you want to reach out, find me here:
 **Email:** sheelav.prakash73@gmail.com
-**GitHub:** [github.com/yourgithub](https://github.com/Terminator567)
+**GitHub:** [github.com/Terminator567](https://github.com/Terminator567)
 
