@@ -10,15 +10,15 @@ Project Overview
 │   ├── Singapore.png
 │   ├── Sydney.png
 │   ├── India.png
-├── index.html      # Main homepage (Welcome Page)
-├── timeline.html   # Travel timeline with clickable locations
-├── tokyo.html      # Tokyo page
-├── singapore.html  # Singapore page
-├── sydney.html     # Sydney page
-├── india.html      # India page
-├── quick-summary.html  # TL;DR version of my journey
-├── style.css       # Main stylesheet
-└── README.md       # This file!
+├── index.html      
+├── timeline.html   
+├── tokyo.html      
+├── singapore.html  
+├── sydney.html     
+├── india.html      
+├── quick-summary.html  
+├── style.css       
+└── README.md       
 
 
 Features
