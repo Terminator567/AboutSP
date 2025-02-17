@@ -5,8 +5,7 @@ Live Website
 Project Overview
 ### **File Structure**
 
-AboutSP/
-├── assets/         # All images used in the project
+├── assets/
 │   ├── Tokyo.png
 │   ├── Singapore.png
 │   ├── Sydney.png
@@ -20,6 +19,7 @@ AboutSP/
 ├── quick-summary.html  # TL;DR version of my journey
 ├── style.css       # Main stylesheet
 └── README.md       # This file!
+
 
 Features
 **Interactive Timeline** – Click on different locations to read my experiences.
